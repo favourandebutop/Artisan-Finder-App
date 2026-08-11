@@ -706,3 +706,168 @@ input {
         padding-right: 18px;
     }
 }
+/* =========================================
+   ARTISAN FINDER - ARTISAN CARDS
+   ========================================= */
+
+.artisans-section {
+    padding: 70px 20px;
+    background: #f8f8f8;
+}
+
+.section-heading {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.section-label {
+    color: #f97316;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    color: #222;
+}
+
+.section-heading p {
+    color: #666;
+    font-size: 16px;
+}
+
+.artisan-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.artisan-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    gap: 18px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artisan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
+}
+
+.artisan-avatar {
+    min-width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #fff1e8;
+    color: #f97316;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.artisan-info {
+    flex: 1;
+}
+
+.artisan-info h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+    color: #222;
+}
+
+.artisan-info h3 span {
+    color: #f97316;
+    font-size: 14px;
+}
+
+.artisan-job {
+    margin: 0 0 10px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.artisan-location {
+    margin: 0 0 10px;
+    color: #777;
+    font-size: 13px;
+}
+
+.artisan-rating {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.artisan-rating span {
+    color: #888;
+    font-weight: 400;
+}
+
+.verified {
+    color: #16a34a;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-btn {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 15px;
+    background: #f97316;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #ea580c;
+}
+
+/* Mobile responsive design */
+@media (max-width: 800px) {
+    .artisan-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .artisans-section {
+        padding: 50px 15px;
+    }
+
+    .artisan-card {
+        padding: 20px;
+    }
+
+    .artisan-avatar {
+        min-width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .artisan-info h3 {
+        font-size: 17px;
+    }
+}
