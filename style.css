@@ -870,4 +870,270 @@ input {
     .artisan-info h3 {
         font-size: 17px;
     }
+}/* =========================================
+   RESPONSIVE HOMEPAGE
+   ========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #ffffff;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > a {
+    color: #f97316;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav div a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav div a:hover {
+    color: #f97316;
+}
+
+/* Hero */
+#home {
+    background: linear-gradient(135deg, #fff7ed, #ffffff);
+    padding: 90px 20px;
+    text-align: center;
+}
+
+#home > p:first-child {
+    color: #f97316;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#home h1 {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 15px auto;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Search */
+#home form {
+    max-width: 650px;
+    margin: 30px auto 0;
+    display: flex;
+    background: #ffffff;
+    padding: 7px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+#home input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+#home button {
+    border: none;
+    background: #f97316;
+    color: white;
+    padding: 0 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background: #ea580c;
+}
+
+/* Categories */
+#categories {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+#categories h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+#categories > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#categories article {
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+#categories article:hover {
+    transform: translateY(-5px);
+    border-color: #f97316;
+}
+
+#categories h3 {
+    margin-bottom: 8px;
+}
+
+#categories p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* About */
+#about {
+    padding: 70px 20px;
+    background: #222;
+    color: white;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 34px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+    color: #dddddd;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+
+    nav div {
+        gap: 12px;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+
+    #categories > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav > a {
+        font-size: 20px;
+    }
+
+    nav div {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav div a {
+        font-size: 12px;
+    }
+
+    #home {
+        padding: 65px 15px;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #home form {
+        flex-direction: column;
+        gap: 8px;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    #home input {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    #home button {
+        padding: 14px;
+    }
+
+    #categories {
+        padding: 50px 15px;
+    }
+
+    #categories h2 {
+        font-size: 28px;
+    }
+
+    #categories > div {
+        grid-template-columns: 1fr;
+    }
 }
