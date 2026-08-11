@@ -10,122 +10,297 @@
         name="description"
         content="Find trusted and verified artisans near you in Nigeria."
     >
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header>
-        <nav>
-            <a href="#" aria-label="Artisan Finder Nigeria home">
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">✦</span>
                 Artisan Finder
             </a>
 
-            <div>
+            <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#categories">Categories</a>
                 <a href="#artisans">Artisans</a>
                 <a href="#about">About</a>
             </div>
+
+            <a href="#artisans" class="nav-button">
+                Find an Artisan
+            </a>
+
         </nav>
     </header>
+
 
     <!-- Main Content -->
     <main>
 
         <!-- Hero Section -->
-        <section id="home">
-            <p>Nigeria's Trusted Artisan Marketplace</p>
+        <section id="home" class="hero">
 
-            <h1>Find Trusted Artisans Near You</h1>
+            <div class="hero-content">
 
-            <p>
-                Hire trusted Nigerian electricians, plumbers, mechanics,
-                carpenters and other skilled professionals.
-            </p>
+                <div class="hero-badge">
+                    ✓ Nigeria's Trusted Artisan Marketplace
+                </div>
 
-            <form>
-                <label for="search">Search for an artisan</label>
-                <input
-                    type="search"
-                    id="search"
-                    name="search"
-                    placeholder="What service do you need?"
-                >
+                <h1>
+                    Find Trusted
+                    <span>Artisans Near You</span>
+                </h1>
 
-                <button type="submit">Search</button>
-            </form>
+                <p class="hero-text">
+                    Connect with skilled and verified Nigerian artisans
+                    for reliable, quality services at your convenience.
+                </p>
+
+                <form class="search-form" id="searchForm">
+
+                    <div class="search-input-wrapper">
+                        <span class="search-icon">⌕</span>
+
+                        <input
+                            type="search"
+                            id="search"
+                            name="search"
+                            placeholder="What service do you need?"
+                            aria-label="Search for an artisan"
+                        >
+                    </div>
+
+                    <button type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+                <p class="popular-searches">
+                    Popular:
+                    <a href="#categories">Electrician</a>
+                    <a href="#categories">Plumber</a>
+                    <a href="#categories">Carpenter</a>
+                    <a href="#categories">Mechanic</a>
+                </p>
+
+            </div>
+
         </section>
+
 
         <!-- Categories Section -->
-        <section id="categories">
-            <h2>Popular Categories</h2>
+        <section id="categories" class="section">
 
-            <div>
-                <article>
-                    <h3>Electrician</h3>
-                    <p>Find skilled electricians.</p>
-                </article>
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">EXPLORE SERVICES</span>
+                    <h2>Popular Categories</h2>
+                </div>
 
-                <article>
-                    <h3>Plumber</h3>
-                    <p>Find reliable plumbers.</p>
-                </article>
-
-                <article>
-                    <h3>Carpenter</h3>
-                    <p>Find experienced carpenters.</p>
-                </article>
-
-                <article>
-                    <h3>Mechanic</h3>
-                    <p>Find trusted mechanics.</p>
-                </article>
+                <p>
+                    Find the right professional for your job.
+                </p>
             </div>
+
+            <div class="category-grid">
+
+                <article class="category-card">
+                    <div class="category-icon">⚡</div>
+                    <h3>Electrician</h3>
+                    <p>Skilled professionals for electrical work.</p>
+                    <a href="#artisans">Find Electricians →</a>
+                </article>
+
+                <article class="category-card">
+                    <div class="category-icon">🔧</div>
+                    <h3>Plumber</h3>
+                    <p>Reliable plumbers for your home and office.</p>
+                    <a href="#artisans">Find Plumbers →</a>
+                </article>
+
+                <article class="category-card">
+                    <div class="category-icon">🪚</div>
+                    <h3>Carpenter</h3>
+                    <p>Experienced carpenters for quality woodwork.</p>
+                    <a href="#artisans">Find Carpenters →</a>
+                </article>
+
+                <article class="category-card">
+                    <div class="category-icon">🚗</div>
+                    <h3>Mechanic</h3>
+                    <p>Trusted mechanics for vehicle repairs.</p>
+                    <a href="#artisans">Find Mechanics →</a>
+                </article>
+
+            </div>
+
         </section>
+
 
         <!-- Featured Artisans -->
-        <section id="artisans">
-            <h2>Featured Artisans</h2>
+        <section id="artisans" class="section artisans-section">
 
-            <p>Top-rated and trusted professionals near you.</p>
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">VERIFIED PROFESSIONALS</span>
+                    <h2>Featured Artisans</h2>
+                </div>
 
-            <article>
-                <h3>Amina Bello</h3>
-                <p>Fashion Designer & Tailor</p>
-                <p>Verified professional</p>
-            </article>
+                <p>
+                    Top-rated professionals you can trust.
+                </p>
+            </div>
 
-            <article>
-                <h3>Emeka Okafor</h3>
-                <p>Electrician</p>
-                <p>Verified professional</p>
-            </article>
+            <div class="artisan-grid">
 
-            <article>
-                <h3>David Musa</h3>
-                <p>Plumber</p>
-                <p>Verified professional</p>
-            </article>
+                <article class="artisan-card">
+
+                    <div class="artisan-avatar">AB</div>
+
+                    <div class="verified">✓ Verified</div>
+
+                    <h3>Amina Bello</h3>
+
+                    <p class="artisan-job">
+                        Fashion Designer & Tailor
+                    </p>
+
+                    <p class="artisan-location">
+                        📍 Lagos, Nigeria
+                    </p>
+
+                    <div class="artisan-bottom">
+                        <span>⭐ 4.9</span>
+                        <button type="button">View Profile</button>
+                    </div>
+
+                </article>
+
+
+                <article class="artisan-card">
+
+                    <div class="artisan-avatar">EO</div>
+
+                    <div class="verified">✓ Verified</div>
+
+                    <h3>Emeka Okafor</h3>
+
+                    <p class="artisan-job">
+                        Electrician
+                    </p>
+
+                    <p class="artisan-location">
+                        📍 Abuja, Nigeria
+                    </p>
+
+                    <div class="artisan-bottom">
+                        <span>⭐ 4.8</span>
+                        <button type="button">View Profile</button>
+                    </div>
+
+                </article>
+
+
+                <article class="artisan-card">
+
+                    <div class="artisan-avatar">DM</div>
+
+                    <div class="verified">✓ Verified</div>
+
+                    <h3>David Musa</h3>
+
+                    <p class="artisan-job">
+                        Plumber
+                    </p>
+
+                    <p class="artisan-location">
+                        📍 Kaduna, Nigeria
+                    </p>
+
+                    <div class="artisan-bottom">
+                        <span>⭐ 4.9</span>
+                        <button type="button">View Profile</button>
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Artisan Finder</h2>
 
-            <p>
-                Artisan Finder Nigeria helps customers discover
-                trusted skilled professionals and makes it easier
-                to connect with artisans for quality services.
-            </p>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+
+            <div class="about-content">
+
+                <span class="section-label">ABOUT US</span>
+
+                <h2>
+                    Making it easier to find
+                    trusted Nigerian artisans.
+                </h2>
+
+                <p>
+                    Artisan Finder Nigeria helps customers discover
+                    trusted skilled professionals and makes it easier
+                    to connect with artisans for quality services.
+                </p>
+
+                <a href="#artisans" class="primary-button">
+                    Find an Artisan
+                </a>
+
+            </div>
+
         </section>
 
     </main>
 
+
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Artisan Finder Nigeria. All rights reserved.</p>
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <a href="#home" class="logo">
+                    <span class="logo-icon">✦</span>
+                    Artisan Finder
+                </a>
+
+                <p>
+                    Connecting Nigerians with trusted artisans.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#artisans">Artisans</a>
+                <a href="#about">About</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Artisan Finder Nigeria. All rights reserved.
+            </p>
+        </div>
+
     </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
